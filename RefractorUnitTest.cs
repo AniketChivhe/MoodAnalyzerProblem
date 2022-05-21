@@ -9,11 +9,8 @@ namespace RefractorTest
         MoodAnalyze moodAnalyser;
         string message = " I am in happy Mood";
         string message1 = " I am in sad Mood";
-        //[TestInitialize]
-        //public void SetUp()
-        //{
-        //    moodAnalyser = new MoodAnalyze(message);
-        //}
+        
+        //Refractor (Repeat TC1.1) - message in constructor should return Happy
         [TestMethod]
         public void TestMethodForHappyMood()
 
@@ -23,6 +20,7 @@ namespace RefractorTest
             string actual = moodAnalyser.AnalyzeMood();
             Assert.AreEqual(expected, actual);
         }
+        //Refractor (Repeat TC1.2)- message in constructor should return Sad
         [TestMethod]
         public void TestMethodForSadMood()
         {
