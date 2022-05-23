@@ -22,13 +22,10 @@ namespace TestProject1
             string expected = "SAD";
             string message = " I am in Sad Mood";
             MoodAnalyze moodAnalyze = new MoodAnalyze(message);
-
             //Act
             string mood = moodAnalyze.AnalyzeMood();
-
             //Assert
             Assert.AreEqual(expected, mood);
-
         }
         /// <summary>
         /// TC 1.2 Return happy moood And TC2.1 - Given Null mood should return happy.
